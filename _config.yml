@@ -1,0 +1,13 @@
+# Site settings
+name: Floating Labels
+title: Floating Labels
+description: A simple demonstration of floating labels.
+baseurl: "/labels"
+
+# Build settings
+highlighter: rouge
+markdown: kramdown
+
+# Sass settings
+sass:
+  sass_dir: assets/stylesheets

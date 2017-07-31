@@ -1,0 +1,32 @@
+// Font Weights
+$light:           300;
+$regular:         400;
+$bold:            700;
+
+// Header Font
+$header-font: $bold 20px/1.5 "objektiv-mk1", sans-serif;
+
+// Body Font
+$body-font: $regular 20px/1.6 "objektiv-mk1", sans-serif;
+
+// Colors
+$blue:            #557bfe;
+$blue-gray:       #525562;
+$dark-blue:       #182552;
+$gray:            #a5869e;
+$light-gray:      #f3f3f5;
+$red:             #f53855;
+$white:           #fff;
+
+// Border Radius
+$border-radius:   3px;
+$circle:          50%;
+
+// Transitions
+$ease: ease-in-out .3s;
+
+// Large Screens
+$large: "(min-width: 1000px)";
+
+// Medium Screens
+$medium: "(min-width: 800px)";

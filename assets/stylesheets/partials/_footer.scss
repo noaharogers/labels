@@ -1,0 +1,27 @@
+footer {
+  align-items: center;
+  background: #8A7C87;
+  background: -webkit-linear-gradient(270deg, $blue-gray, lighten($blue-gray, 10%));
+  background: linear-gradient(270deg, $blue-gray, lighten($blue-gray, 10%));
+  color: $white;
+  display: flex;
+  padding: 3rem 0;
+  position: relative;
+  text-align: center;
+
+  @media #{$medium} {
+    padding: 12rem 0;
+  }
+}
+
+.footer__subtitle {
+  color: $white;
+  font-size: 1rem;
+  font-weight: $regular;
+  margin: 0;
+  text-align: center;
+
+  @media #{$medium} {
+    font-size: 1.25rem;
+  }
+}

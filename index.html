@@ -1,0 +1,54 @@
+---
+layout: default
+title: Labels
+---
+<section class="module">
+  <div class="container">
+    <h2 class="module__title">Placeholder Text</h2>
+    <p class="module__subtitle">One of the most common ways of labeling form inputs is using Placeholder Text. A placeholder label accurately describes the purpose of the form input, but is not visible after a user enters text.</p>
+    <form>
+      <input type="text" placeholder="Full Name">
+      <input type="text" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <span class="button--primary">Sign In</span>
+    </form>
+  </div>
+</section>
+
+<section class="module">
+  <div class="container">
+    <h2 class="module__title">Input &amp; Label</h2>
+    <p class="module__subtitle">Using a label element in conjunction with an input solves this problem. When text is entered in the input, the label remains visible. This can be especially helpful for users filling out long forms.</p>
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="ex. John Smith" required>
+      <label>Email</label>
+      <input type="text" required>
+      <label>Password</label>
+      <input type="password" required>
+      <span class="button--primary">Sign In</span>
+    </form>
+  </div>
+</section>
+
+<section class="module">
+  <div class="container">
+    <h2 class="module__title">The best of both worlds?</h2>
+    <p class="module__subtitle">A great solution is using floating labels. On the surface, this looks much like our first example, but when a user enters text, the label animates slightly above it's input.</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="text" required>
+        <label>Full Name</label>
+      </div>
+      <div class="input-wrapper">
+        <input type="text" required>
+        <label>Email</label>
+      </div>
+      <div class="input-wrapper">
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+      <span class="button--primary">Sign In</span>
+    </form>
+  </div>
+</section>

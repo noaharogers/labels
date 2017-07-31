@@ -1,0 +1,102 @@
+// Form
+form {
+  background: $white;
+  border-radius: $border-radius;
+  padding: 1.5rem;
+  margin: 0 auto;
+  max-width: 460px;
+
+  @media #{$medium} {
+    padding: 2rem;
+  }
+}
+
+// Inputs
+input, textarea {
+  border: 1px solid darken($light-gray, 9%);
+  border-radius: $border-radius;
+  color: $gray;
+  font: $body-font;
+  font-size: 1rem;
+  margin-bottom: .75rem;
+  outline: none;
+  padding: .75rem;
+  transition: border .2s ease-in-out;
+  width: 100%;
+
+  &:focus {
+    border: 1px solid darken($light-gray, 16%);
+  }
+
+  @media #{$medium} {
+    margin-bottom: 1rem;
+  }
+}
+
+// Label
+label {
+  color: darken($gray, 10%);
+  display: block;
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: .25rem;
+}
+
+// Floating Label
+.input-wrapper {
+  line-height: 26px;
+  position: relative;
+
+  label {
+    background: $white;
+    color: darken($gray, 10%);
+    font-size: 1rem;
+    left: .55rem;
+    padding: 0 5px;
+    pointer-events: none;
+    position: absolute;
+    top: .8rem;
+    transition: all .2s ease-in-out;
+    transform: translateY(-23px);
+    user-select: none;
+    z-index: 2;
+  }
+
+  input:invalid + label {
+    transform: translateY(0);
+  }
+
+  input:valid + label {
+    font-size: .9rem;
+  }
+
+  input:focus + label {
+    color: darken($gray, 30%);
+    font-size: .9rem;
+    transform: translateY(-25px);
+  }
+}
+
+// Button
+.button--primary {
+  background: $blue;
+  border: 0;
+  border-radius: $border-radius;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font: $body-font;
+  font-size: 1rem;
+  font-weight: $bold;
+  margin: 0 auto;
+  outline: 0;
+  padding: .9rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background $ease;
+  width: 100%;
+
+  &:hover {
+    background: lighten($blue, 3%);
+  }
+}

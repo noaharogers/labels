@@ -1,0 +1,47 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: $white;
+  color: $gray;
+  font: $body-font;
+}
+
+// Container & Module
+[class*="container"] {
+  @extend %clearfix;
+  margin: 0 auto;
+  max-width: 850px;
+  width: 90%;
+}
+
+// Example Sections
+.module {
+  align-items: center;
+  background: $light-gray;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  position: relative;
+
+  @media #{$medium} {
+    padding: 6rem 0;
+  }
+
+  &:nth-of-type(even) {
+    background: lighten($light-gray, 5%);
+
+    form {
+      background: $light-gray;
+    }
+  }
+}

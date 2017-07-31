@@ -1,0 +1,42 @@
+// Header
+header {
+  @extend %clearfix;
+  align-items: center;
+  background: $blue;
+  background: linear-gradient(220deg, $red, $blue);
+  background-size: 120%;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+
+  @media #{$medium} {
+    height: 600px;
+  }
+}
+
+header .container {
+  display: block;
+}
+
+.header__main-title {
+  color: $light-gray;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+  @media #{$medium} {
+    font-size: 3rem;
+  }
+}
+
+.header__subtitle {
+  color: $white;
+  font-size: 1.1rem;
+  font-weight: $regular;
+  margin-bottom: 1rem;
+  text-align: center;
+
+  @media #{$medium} {
+    font-size: 1.25rem;
+  }
+}
