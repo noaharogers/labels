@@ -14,14 +14,21 @@ footer {
   }
 }
 
-.footer__subtitle {
+
+// Footer Elements
+.footer__title {
   color: $white;
   font-size: 1rem;
   font-weight: $regular;
-  margin: 0;
+  margin-bottom: 3rem;
   text-align: center;
 
   @media #{$medium} {
     font-size: 1.25rem;
   }
+}
+
+.footer__icon {
+  margin: 0 auto;
+  width: 35px;
 }
