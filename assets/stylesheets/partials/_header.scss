@@ -19,6 +19,8 @@ header .container {
   display: block;
 }
 
+
+// Header Elements
 .header__main-title {
   color: $light-gray;
   font-size: 2rem;
@@ -38,5 +40,45 @@ header .container {
 
   @media #{$medium} {
     font-size: 1.25rem;
+  }
+}
+
+// Header Arrow & Animation
+.header__arrow {
+  animation: slide 3s ease-in-out 1s infinite;
+  border: solid $white;
+  bottom: 5rem;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  margin: auto;
+  opacity: 0;
+  padding: 5px;
+  position: absolute;
+  transform: rotate(45deg);
+  transition: all $ease;
+  -webkit-transform: rotate(45deg);
+}
+
+@keyframes slide {
+  0% {
+    bottom: 5rem;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    bottom: 5rem;
+  }
+  50% {
+    bottom: 3rem;
+  }
+  60% {
+    bottom: 3rem;
+    opacity: 1;
+  }
+  80% {
+    bottom: 3rem;
+    opacity: 0;
   }
 }

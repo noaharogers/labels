@@ -16,14 +16,14 @@ body {
 }
 
 // Container & Module
-[class*="container"] {
+.container {
   @extend %clearfix;
   margin: 0 auto;
   max-width: 850px;
   width: 90%;
 }
 
-// Example Sections
+// Module
 .module {
   align-items: center;
   background: $light-gray;
