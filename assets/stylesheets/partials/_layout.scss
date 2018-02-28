@@ -31,14 +31,13 @@ body {
   display: flex;
   justify-content: center;
   padding: 4rem 0;
-  position: relative;
 
   @media #{$medium} {
     padding: 6rem 0;
   }
 
   &:nth-of-type(even) {
-    background: lighten($light-gray, 5%);
+    background: $white;
 
     form {
       background: $light-gray;

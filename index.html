@@ -5,7 +5,7 @@ title: Labels
 <section class="module">
   <div class="container">
     <h2 class="module__title">Placeholder Text</h2>
-    <p class="module__subtitle">One of the most common ways of labeling form inputs is using Placeholder Text. A placeholder label accurately describes the purpose of the form input, but is not visible after a user enters text.</p>
+    <p class="module__subtitle">One of the most common ways of labeling form inputs, placeholder text looks nice, but leaves the user without any context after the input is filled in.</p>
     <form>
       <input type="text" placeholder="Full Name">
       <input type="text" placeholder="Email">
@@ -17,8 +17,8 @@ title: Labels
 
 <section class="module">
   <div class="container">
-    <h2 class="module__title">Input &amp; Label</h2>
-    <p class="module__subtitle">Using a label element in conjunction with an input solves this problem. When text is entered in the input, the label remains visible. This can be especially helpful for users filling out long forms.</p>
+    <h2 class="module__title">Label + Input</h2>
+    <p class="module__subtitle">Adding a label above it's input solves the placeholder text problem, but is not without it's downsides. This method has the potential to result in much longer forms.</p>
     <form>
       <label>Full Name</label>
       <input type="text" placeholder="ex. John Smith" required>
@@ -34,7 +34,7 @@ title: Labels
 <section class="module">
   <div class="container">
     <h2 class="module__title">The best of both worlds?</h2>
-    <p class="module__subtitle">A great solution is using CSS to float labels. On the surface, this looks much like our first example, but when a user enters text, the label animates slightly above it's input.</p>
+    <p class="module__subtitle">While this may look like placeholder text, floating labels allow us to animate the label above the input after text is populated. Go ahead and give it a try!</p>
     <form>
       <div class="input-wrapper">
         <input type="text" required>

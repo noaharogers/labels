@@ -1,14 +1,13 @@
 // Form
 form {
   background: $white;
-  border-radius: $border-radius;
-  box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, 0.15);
   padding: 1.5rem;
   margin: 0 auto;
   max-width: 460px;
 
   @media #{$medium} {
-    padding: 2rem;
+    padding: 2rem 1.75rem;
   }
 }
 
@@ -19,18 +18,18 @@ input, textarea {
   color: darken($gray, 30%);
   font: $body-font;
   font-size: 1rem;
-  margin-bottom: .75rem;
+  margin-bottom: 1rem;
   outline: none;
-  padding: .75rem;
+  padding: .65rem;
   transition: border .2s ease-in-out;
   width: 100%;
 
   &:focus {
-    border: 1px solid darken($gray, 10%);
+    border: 1px solid $gray;
   }
 
   @media #{$medium} {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -62,7 +61,7 @@ label {
     pointer-events: none;
     position: absolute;
     text-transform: none;
-    top: .8rem;
+    top: .7rem;
     transition: all .2s ease-in-out;
     transform: translateY(-23px);
     user-select: none;
@@ -80,7 +79,7 @@ label {
   input:focus + label {
     color: darken($gray, 30%);
     font-size: .9rem;
-    transform: translateY(-25px);
+    transform: translateY(-23px);
   }
 }
 
@@ -97,7 +96,7 @@ label {
   font-weight: $bold;
   margin: 0 auto;
   outline: 0;
-  padding: .9rem 1.5rem;
+  padding: .85rem 1rem;
   text-align: center;
   text-decoration: none;
   transition: background $ease;
@@ -105,5 +104,15 @@ label {
 
   &:hover {
     background: lighten($blue, 3%);
+  }
+}
+
+.button--secondary {
+  @extend .button--primary;
+  background: $white;
+  color: $gray;
+
+  &:hover {
+    background: darken($light-gray, 7%);
   }
 }
