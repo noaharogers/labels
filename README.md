@@ -1,5 +1,5 @@
-# Labels
-A simple project highlighting the differences between label and input pairings.
+# Floating Labels
+A simple project containing interactive examples of different label styles.
 
 #### Install Jekyll
 ```
